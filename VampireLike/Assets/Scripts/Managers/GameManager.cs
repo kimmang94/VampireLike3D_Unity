@@ -18,11 +18,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GamePoolManager.aInstance.Init();
+        GameControl.aInstance.Init();
+        SpawnManager.aInstance.Init();
+        FSMStageController.aInstance.Init();
+
     }
 
     private void OnDestroy()
     {
         GamePoolManager.aInstance.Clear();
+        GameControl.aInstance.Clear();
+        SpawnManager.aInstance.Clear();
+        FSMStageController.aInstance.Clear();
     }
     // Update is called once per frame
     void Update()
