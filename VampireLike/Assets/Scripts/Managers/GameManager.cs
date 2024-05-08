@@ -17,15 +17,19 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameDataManager.aInstance.Init();
+        GameDataManager.aInstance.SetStageData(mMyPc, mNpcSpwanParent, mSkillObjectParent, mItemObjectParent);
+        GameDataManager.aInstance.SetCurrentStage(mStageId);
+
         GamePoolManager.aInstance.Init();
         GameControl.aInstance.Init();
         SpawnManager.aInstance.Init();
         FSMStageController.aInstance.Init();
-
     }
 
     private void OnDestroy()
     {
+        GameDataManager.aInstance.Clear();
         GamePoolManager.aInstance.Clear();
         GameControl.aInstance.Clear();
         SpawnManager.aInstance.Clear();
