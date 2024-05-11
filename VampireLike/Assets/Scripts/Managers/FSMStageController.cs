@@ -26,7 +26,7 @@ public class FSMStageController
     }
     public void EnterStage()
     {
-        mStageFSM = new FSM(new FSMStateBase(EFSMStageStateType.StageStart));
+        mStageFSM = new FSM(new FSMStageStateEnter());
     }
 
     public void ChangeState(FSMStateBase InFSMState)

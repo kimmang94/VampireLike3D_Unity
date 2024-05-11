@@ -14,14 +14,15 @@ public class FSMStateBase
     {
 
     }
+    public virtual void OnPorgress(float InDeltaTime)
+    {
+
+    }
 
     public virtual void OnExit()
     {
 
     }
 
-    public virtual void OnPorgress(float InDeltaTime)
-    {
 
-    }
 }

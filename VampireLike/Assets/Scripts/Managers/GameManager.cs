@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
         GameControl.aInstance.Init();
         SpawnManager.aInstance.Init();
         FSMStageController.aInstance.Init();
+
+        FSMStageController.aInstance.EnterStage();
     }
 
     private void OnDestroy()
