@@ -2087,6 +2087,7 @@ GameObject:
   - component: {fileID: 2093118404181716129}
   - component: {fileID: 8279900632863105349}
   - component: {fileID: 1459999582613213335}
+  - component: {fileID: 848503211695799150}
   m_Layer: 0
   m_Name: MyPcUnit
   m_TagString: Untagged
@@ -2158,9 +2159,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mSpeed: 5
-  mTransformSpeed: {fileID: 378549800588260224}
+  mRotationTransform: {fileID: 378549800588260224}
   mRotationSpeed: 400
   mAnimator: {fileID: 2093118404181716129}
+--- !u!114 &848503211695799150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099148784340414952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f182965094eac7f44885c4c0fe38a8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7315154515045618276
 GameObject:
   m_ObjectHideFlags: 0
