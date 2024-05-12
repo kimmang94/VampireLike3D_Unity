@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 124238389}
   - component: {fileID: 124238391}
   - component: {fileID: 124238390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(-100.0, 0.0, 126.9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 230551241}
   - component: {fileID: 230551243}
   - component: {fileID: 230551242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(100.0, 0.0, 26.9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 257509918}
   - component: {fileID: 257509920}
   - component: {fileID: 257509919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(0.0, 0.0, 126.9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 574140228}
   - component: {fileID: 574140230}
   - component: {fileID: 574140229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(-100.0, 0.0, -73.1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 770113498}
   - component: {fileID: 770113500}
   - component: {fileID: 770113499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(-100.0, 0.0, 26.9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,6 +677,11 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!4 &1047537330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 378549800588260224, guid: af813cdd266d9bc4399e7fcf40af8bcc, type: 3}
+  m_PrefabInstance: {fileID: 5339721779009414283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1318665726
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1318665727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +733,7 @@ GameObject:
   - component: {fileID: 1643021751}
   - component: {fileID: 1643021753}
   - component: {fileID: 1643021752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +825,7 @@ GameObject:
   - component: {fileID: 1788352112}
   - component: {fileID: 1788352114}
   - component: {fileID: 1788352113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(100.0, 0.0, 126.9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mStageId: 1
-  mMyPc: {fileID: 0}
+  mMyPc: {fileID: 3767765065106999475}
   mNpcSpwanParent: {fileID: 0}
   mSkillObjectParent: {fileID: 0}
   mItemObjectParent: {fileID: 0}
@@ -961,7 +966,7 @@ GameObject:
   - component: {fileID: 2025802530}
   - component: {fileID: 2025802532}
   - component: {fileID: 2025802531}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(0.0, 0.0, -73.1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +1058,7 @@ GameObject:
   - component: {fileID: 2135879430}
   - component: {fileID: 2135879432}
   - component: {fileID: 2135879431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_(100.0, 0.0, -73.1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,6 +1139,11 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &3767765065106999475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7099148784340414952, guid: af813cdd266d9bc4399e7fcf40af8bcc, type: 3}
+  m_PrefabInstance: {fileID: 5339721779009414283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5339721779009414283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1142,6 +1152,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1459999582613213335, guid: af813cdd266d9bc4399e7fcf40af8bcc, type: 3}
+      propertyPath: mRotationTransform
+      value: 
+      objectReference: {fileID: 1047537330}
     - target: {fileID: 4918042781520470117, guid: af813cdd266d9bc4399e7fcf40af8bcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

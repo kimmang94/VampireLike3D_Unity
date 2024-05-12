@@ -6,9 +6,7 @@ public class GameManager : MonoBehaviour
 {
     // Stage ID
     public int mStageId = 1;
-
     public GameObject mMyPc;
-
     public Transform mNpcSpwanParent;
     public Transform mSkillObjectParent;
     public Transform mItemObjectParent;
@@ -25,7 +23,7 @@ public class GameManager : MonoBehaviour
         GameControl.aInstance.Init();
         SpawnManager.aInstance.Init();
         FSMStageController.aInstance.Init();
-
+        GameControl.aInstance.SetControlObject(mMyPc);
         FSMStageController.aInstance.EnterStage();
     }
 
@@ -41,6 +39,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         FSMStageController.aInstance.OnUpdate(Time.deltaTime);
+        GameControl.aInstance.OnUpdate();
     }
 
     
